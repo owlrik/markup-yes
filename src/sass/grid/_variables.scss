@@ -2,7 +2,19 @@
 //---------------------------------
 
 $enable-grid-classes:             true !default;
-$enable-css-grid:                 false !default;
+
+// Spacers
+//---------------------------------
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
 
 // Grid breakpoints
 //---------------------------------
@@ -16,9 +28,6 @@ $grid-breakpoints: (
   xxl: 1400px
 ) !default;
 
-//@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-//@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
-
 // Grid containers
 //---------------------------------
 
@@ -30,12 +39,13 @@ $container-max-widths: (
   xxl: 1320px
 ) !default;
 
-//@include _assert-ascending($container-max-widths, "$container-max-widths");
-
 // Grid columns
 //---------------------------------
 
 $grid-columns:                    12 !default;
 $grid-gutter-width:               1.5rem !default;
+$grid-row-columns:                6 !default;
+
+$gutters:                         $spacers !default;
 
 $container-padding-x:             $grid-gutter-width * 0.5 !default;

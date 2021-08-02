@@ -1,0 +1,30 @@
+.title {
+  margin: 0 0 1em;
+  font-weight: 900;
+  font-size: px-to-rem(24);
+  color: $color-black;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--decorated {
+    position: relative;
+    padding-bottom: 0.8em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      width: 64px;
+      height: 7px;
+      background-color: $color-accent;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.title__small {
+  display: block;
+  font-size: px-to-rem(18);
+}

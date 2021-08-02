@@ -1,0 +1,71 @@
+.head {
+  padding-top: px-to-rem(80);
+}
+
+.head .btn {
+  margin-top: 0.9em;
+}
+
+.head__inner {
+  @include make-row();
+
+  position: relative;
+  padding-top: 21em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 20.71em;
+    height: 20.36em;
+    background: url("../img/bg/bg-head-bus.png") center top/contain no-repeat;
+    transform: translateX(-50%);
+  }
+}
+
+.head__text-wrapper {
+  @include make-col-ready();
+  @include make-col();
+
+  z-index: 2;
+  text-align: center;
+}
+
+.head__title {
+  margin-bottom: 0.5em;
+}
+
+.head__lead {
+  margin: 0;
+}
+
+.head__decors {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.head__decor-01,
+.head__decor-02,
+.head__decor-03 {
+  position: absolute;
+  z-index: 1;
+}
+
+.head__decor-01 {
+  top: 2em;
+  right: 2.29em;
+}
+
+.head__decor-02 {
+  top: 14.64em;
+  left: 2.14em;
+}
+
+.head__decor-03 {
+  display: none;
+}

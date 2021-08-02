@@ -8,6 +8,7 @@
 //---------------------------------
 
 @import "variables";
+@import "functions";
 @import "mixins";
 @import "keyframes";
 @import "animation";
@@ -18,3 +19,4 @@
 
 // Blocks
 //---------------------------------
+@import "blocks/page-header";

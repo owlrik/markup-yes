@@ -20,12 +20,26 @@ body {
   width: 100%;
   min-width: 320px;
   min-height: 100vh;
-  font-size: $font-size;
+  font-size: px-to-rem(14);
   line-height: $line-height;
   font-family: $font-family;
   color: $color-text;
+  letter-spacing: 0.05em;
   overflow-wrap: break-word;
   background-color: $color-body;
+
+  @media (min-width: $screen-sm) {
+    font-size: px-to-rem(16);
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: px-to-rem(18);
+  }
+}
+
+a {
+  color: $color-accent;
+  text-underline-offset: 0.36em;
 }
 
 img,

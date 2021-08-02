@@ -5,9 +5,13 @@ $color-black:                     #000000;
 $color-white:                     #ffffff;
 $color-transparent:               rgba(255, 255, 255, 0);
 
-$color-main:                      $color-black;
+$color-main:                      #141414;
+$color-accent:                    #f5112c;
+$color-decor:                     #2429ff;
 
 $color-text:                      $color-main;
+$color-text--black:               $color-black;
+$color-text--light:               #1b1b1b;
 $color-text--invert:              $color-white;
 
 $color-body:                      $color-white;
@@ -15,22 +19,19 @@ $color-body:                      $color-white;
 // Typography
 //---------------------------------
 
-$font-family:                     "Arial", sans-serif;
+$font-family:                     "Gilroy", "Arial", sans-serif;
 
-$font-size:                       16px;
-$line-height:                     1.2;
+$font-size:                       14px;
+$line-height:                     1.29;
 
 // Viewports
 //---------------------------------
 
-$screen-xxs:                      320px;
-$screen-xs:                       480px;
-$screen-sm:                       768px;
-$screen-md:                       1024px;
-$screen-lg:                       1280px;
-$screen-xl:                       1440px;
-$screen-xxl:                      1680px;
-$screen-xxxl:                     1920px;
+$screen-sm:                       576px;
+$screen-md:                       768px;
+$screen-lg:                       992px;
+$screen-xl:                       1200px;
+$screen-xxl:                      1400px;
 
 // Retina
 //---------------------------------

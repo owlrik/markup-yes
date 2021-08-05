@@ -1,0 +1,37 @@
+.problems-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.problems-item--hotel .problems-item__descr {
+  max-width: 14.29em;
+}
+
+.problems-item--conclusion .problems-item__marker {
+  letter-spacing: 0.06em;
+}
+
+.problems-item--conclusion .problems-item__descr {
+  max-width: 16.43em;
+}
+
+.problems-item__marker {
+  font-weight: 900;
+  font-size: 3.43em;
+  line-height: 1;
+  color: $color-text--black;
+  text-transform: lowercase;
+}
+
+.problems-item__marker span {
+  color: $color-accent;
+}
+
+.problems-item__descr {
+  margin: 0 auto 1.6em;
+}
+
+.problems-item__img-wrapper img {
+  margin: 0 auto;
+}

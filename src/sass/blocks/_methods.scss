@@ -1,0 +1,25 @@
+.methods {
+  background: url("../img/bg/bg-methods.svg") center/cover no-repeat;
+}
+
+.methods__inner {
+  padding-top: px-to-rem(85);
+  padding-bottom: px-to-rem(105);
+}
+
+.methods__title {
+  font-weight: 900;
+  font-size: px-to-rem(30);
+}
+
+.methods__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.methods__item {
+  &:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+}

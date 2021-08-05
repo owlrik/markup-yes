@@ -1,0 +1,31 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.review__name {
+  margin: 0 0 0.8em;
+  font-weight: 900;
+  font-size: px-to-rem(14);
+}
+
+.review__text {
+  margin: 0;
+}
+
+.review__photo {
+  order: -1;
+  margin-bottom: 1.7em;
+}
+
+.review__photo img {
+  width: 156px;
+  height: 156px;
+  margin: 0 auto;
+}
+
+.review__social-link {
+  align-self: center;
+  margin-top: 0.8em;
+}

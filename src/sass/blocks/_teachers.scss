@@ -1,0 +1,19 @@
+.teachers__inner {
+  padding-top: px-to-rem(60);
+}
+
+.teachers__title {
+  font-size: px-to-rem(30);
+}
+
+.teachers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.teachers__item {
+  &:not(:last-child) {
+    margin-bottom: 3em;
+  }
+}

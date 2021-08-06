@@ -1,0 +1,26 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links__item {
+  &:not(:last-child) {
+    margin-right: 22px;
+  }
+}
+
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social-links__link svg {
+  fill-opacity: 0.18;
+}

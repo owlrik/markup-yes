@@ -1,0 +1,72 @@
+.trial {
+  text-align: center;
+}
+
+.trial .btn {
+  margin-top: 0.5em;
+}
+
+.trial__inner {
+  position: relative;
+  padding-top: px-to-rem(210);
+  padding-bottom: px-to-rem(128);
+}
+
+.trial__title {
+  margin-bottom: 0.65em;
+}
+
+.trial__text {
+  margin: 0 0 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.trial__decors {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.trial__decor-01 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 20.71em;
+  height: 12.86em;
+  background: url("../img/bg/bg-plane.png") center top/contain no-repeat;
+  transform: translateX(-50%);
+}
+
+.trial__decor-02 {
+  position: absolute;
+  top: 1.3em;
+  right: 0;
+  display: block;
+}
+
+.trial__decor-03 {
+  position: absolute;
+  top: 4.35em;
+  right: 0.1em;
+  display: block;
+}
+
+.trial__decor-04 {
+  position: absolute;
+  top: 11.5em;
+  left: 0;
+  display: block;
+}
+
+.trial__decor-05 {
+  position: absolute;
+  bottom: 4.6em;
+  left: 2.1em;
+  display: block;
+}

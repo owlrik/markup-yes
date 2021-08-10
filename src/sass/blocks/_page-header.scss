@@ -7,9 +7,14 @@
   display: flex;
   align-items: center;
   height: px-to-rem(80);
+  transition: background-color 0.5s ease-in-out;
 
   @media (min-width: $screen-xl) {
     height: px-to-rem(100);
+  }
+
+  &--scrolled {
+    background-color: $color-body;
   }
 }
 
@@ -25,6 +30,10 @@
 
   display: flex;
   height: px-to-rem(80);
+}
+
+.page-header__logo img {
+  width: px-to-rem(61);
 
   @media (min-width: $screen-xl) {
     width: px-to-rem(100);
@@ -49,6 +58,7 @@
 
 .page-header__address {
   display: none;
+  margin: 0;
 
   @media (min-width: $screen-md) {
     display: block;

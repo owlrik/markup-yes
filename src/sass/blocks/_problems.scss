@@ -1,13 +1,41 @@
 .problems {
+  background: url("../img/bg/bg-problems.svg") center/cover no-repeat;
+
+  @media (min-width: $screen-md) {
+    background-position: calc(50% - 50px) 50%;
+  }
+
+  @media (min-width: $screen-xl) {
+    background-position-x: calc(50% - 280px);
+  }
+}
+
+.problems__inner {
   padding-top: px-to-rem(80);
   padding-bottom: px-to-rem(95);
-  background: url("../img/bg/bg-problems.svg") center/cover no-repeat;
+
+  @media (min-width: $screen-md) {
+    padding-top: px-to-rem(120);
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: px-to-rem(160);
+    padding-bottom: px-to-rem(230);
+  }
 }
 
 .problems__title {
   position: relative;
   max-width: 8.33em;
   margin: 0 auto 2.18em;
+
+  @media (min-width: $screen-md) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 0;
+  }
 
   &::after {
     content: "?";
@@ -17,6 +45,14 @@
     font-size: 8em;
     line-height: 1;
     opacity: 0.1;
+
+    @media (min-width: $screen-md) {
+      font-size: 6.7em;
+    }
+
+    @media (min-width: $screen-xl) {
+      right: -0.18em;
+    }
   }
 }
 
@@ -27,11 +63,36 @@
 }
 
 .problems__item {
-  &:last-child {
-    margin-top: px-to-rem(46);
+  margin-bottom: px-to-rem(35);
+
+  @media (min-width: $screen-md) {
+    margin-bottom: px-to-rem(55);
   }
 
-  &:not(:last-child) {
-    margin-bottom: px-to-rem(35);
+  &:nth-child(1) {
+    @media (min-width: $screen-xl) {
+      margin-bottom: px-to-rem(85);
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $screen-xl) {
+      margin-bottom: px-to-rem(-60);
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-top: px-to-rem(46);
+    margin-bottom: 0;
+
+    @media (min-width: $screen-xl) {
+      margin-top: 0;
+    }
   }
 }

@@ -1,28 +1,40 @@
 .head {
+  min-height: px-to-rem(560);
   padding-top: px-to-rem(80);
-  padding-bottom: px-to-rem(85);
+  overflow-x: hidden;
+
+  @media (min-width: $screen-xl) {
+    padding-top: px-to-rem(100);
+  }
 }
 
 .head .btn {
   margin-top: 0.9em;
+
+  @media (min-width: $screen-md) {
+    margin-top: 5em;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-top: 5.3em;
+  }
 }
 
 .head__inner {
   @include make-row();
 
   position: relative;
-  padding-top: 21em;
+  padding-top: px-to-rem(295);
+  padding-bottom: px-to-rem(85);
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    display: block;
-    width: 20.71em;
-    height: 20.36em;
-    background: url("../img/bg/bg-head-bus.png") center top/contain no-repeat;
-    transform: translateX(-50%);
+  @media (min-width: $screen-md) {
+    padding-top: px-to-rem(88);
+    padding-bottom: px-to-rem(65);
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: px-to-rem(192);
+    padding-bottom: px-to-rem(200);
   }
 }
 
@@ -32,14 +44,45 @@
 
   z-index: 2;
   text-align: center;
+
+  @media (min-width: $screen-md) {
+    @include make-col-offset(5);
+
+    text-align: initial;
+  }
+
+  @media (min-width: $screen-xl) {
+    @include make-col-offset(6);
+
+    padding-left: 2.78em;
+  }
 }
 
 .head__title {
   margin-bottom: 0.5em;
+
+  @media (min-width: $screen-md) {
+    line-height: 1.35;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 0.4em;
+    line-height: 1.25;
+  }
 }
 
 .head__lead {
-  margin: 0;
+  max-width: px-to-rem(400);
+  margin: 0 auto;
+
+  @media (min-width: $screen-md) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: px-to-rem(420);
+  }
 }
 
 .head__decors {
@@ -50,23 +93,93 @@
   height: 100%;
 }
 
-.head__decor-01,
-.head__decor-02,
-.head__decor-03 {
+.head__decor {
   position: absolute;
   z-index: 1;
+  display: block;
+
+  &--blue {
+    fill: $color-decor;
+  }
+
+  &--pic {
+    top: px-to-rem(-20);
+    left: 50%;
+    width: px-to-rem(290);
+    height: px-to-rem(295);
+    background: url("../img/bg/bg-head-bus.png") center top/contain no-repeat;
+    transform: translateX(-50%);
+
+    @media (min-width: $screen-md) {
+      top: px-to-rem(-55);
+      left: 0;
+      width: px-to-rem(365);
+      height: px-to-rem(490);
+      transform: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      left: px-to-rem(-70);
+    }
+
+    @media (min-width: $screen-xl) {
+      top: px-to-rem(-100);
+      left: 0;
+      width: px-to-rem(615);
+      height: px-to-rem(800);
+    }
+  }
+
+  &--round {
+    top: 28px;
+    right: 10%;
+
+    @media (min-width: $screen-md) {
+      top: 38px;
+      right: 15%;
+    }
+
+    @media (min-width: $screen-xl) {
+      top: 95px;
+      right: 6.5%;
+    }
+  }
+
+  &--circle {
+    top: 205px;
+    left: 9.4%;
+
+    @media (min-width: $screen-md) {
+      top: 192px;
+      left: -220px;
+      width: 85px;
+      height: 85px;
+    }
+
+    @media (min-width: $screen-xl) {
+      top: 262px;
+      left: -90px;
+    }
+  }
+
+  &--wave {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      top: px-to-rem(315);
+      right: px-to-rem(-55);
+      display: block;
+    }
+
+    @media (min-width: $screen-xl) {
+      top: px-to-rem(485);
+      right: 15px;
+    }
+  }
 }
 
-.head__decor-01 {
-  top: 2em;
-  right: 2.29em;
-}
-
-.head__decor-02 {
-  top: 14.64em;
-  left: 2.14em;
-}
-
-.head__decor-03 {
-  display: none;
+.head__decor svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

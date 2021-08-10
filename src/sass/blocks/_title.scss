@@ -2,13 +2,30 @@
   margin: 0 0 1em;
   font-weight: 900;
   font-size: px-to-rem(24);
+  line-height: 1.25;
   color: $color-black;
   text-align: center;
   text-transform: uppercase;
 
+  @media (min-width: $screen-md) {
+    font-size: px-to-rem(30);
+    //line-height: 1.35;
+    line-height: 1.2;
+    text-align: initial;
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: px-to-rem(45);
+    line-height: 1.2;
+  }
+
   &--decorated {
     position: relative;
     padding-bottom: 0.8em;
+
+    @media (min-width: $screen-xl) {
+      padding-bottom: 0.65em;
+    }
 
     &::after {
       content: "";
@@ -20,6 +37,11 @@
       height: 7px;
       background-color: $color-accent;
       transform: translateX(-50%);
+
+      @media (min-width: $screen-md) {
+        left: 0;
+        transform: none;
+      }
     }
   }
 }
@@ -27,4 +49,12 @@
 .title__small {
   display: block;
   font-size: px-to-rem(18);
+
+  @media (min-width: $screen-md) {
+    font-size: px-to-rem(24);
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: px-to-rem(34);
+  }
 }

@@ -20,6 +20,7 @@ body {
   width: 100%;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
   font-size: px-to-rem(14);
   line-height: $line-height;
   font-family: $font-family;
@@ -28,12 +29,14 @@ body {
   overflow-wrap: break-word;
   background-color: $color-body;
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-md) {
     font-size: px-to-rem(16);
+    line-height: 1.5;
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-xl) {
     font-size: px-to-rem(18);
+    line-height: 1.6;
   }
 }
 

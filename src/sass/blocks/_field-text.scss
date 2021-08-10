@@ -1,0 +1,21 @@
+.field-text__input {
+  display: inline-block;
+  width: 100%;
+  padding: 1.35em 2em;
+  font-size: px-to-rem(14);
+  line-height: 1.29;
+  font-family: $font-family;
+  color: $color-text;
+  text-align: center;
+  letter-spacing: 0.1em;
+  background-color: $color-white;
+  border: 1px solid #bababa;
+  border-radius: 2.2em;
+}
+
+.field-text__error-message {
+  max-height: 0;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+}

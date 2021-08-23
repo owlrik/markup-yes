@@ -1,8 +1,82 @@
 .graduate-reviews__inner {
   padding-top: px-to-rem(60);
   padding-bottom: px-to-rem(90);
+
+  @media (min-width: $screen-md) {
+    position: relative;
+    padding-top: px-to-rem(132);
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: px-to-rem(74);
+  }
+
+  &::after {
+    @media (min-width: $screen-md) {
+      content: "";
+      position: absolute;
+      top: px-to-rem(145);
+      right: px-to-rem(125);
+      z-index: 1;
+      display: block;
+      width: px-to-rem(23);
+      height: px-to-rem(23);
+      background-color: $color-decor;
+      border-radius: 50%;
+    }
+
+    @media (min-width: $screen-xl) {
+      top: px-to-rem(230);
+      right: px-to-rem(165);
+    }
+  }
 }
 
 .graduate-reviews__title {
   margin-bottom: 2.1em;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 1.75em;
+  }
+}
+
+.graduate-reviews__slider .swiper-container {
+  padding-bottom: px-to-rem(65);
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: px-to-rem(90);
+  }
+}
+
+.graduate-reviews__slider .swiper-pagination {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.graduate-reviews__slider .swiper-pagination-bullet {
+  width: px-to-rem(15);
+  height: px-to-rem(15);
+  background-color: #e9e9e9;
+  opacity: 1;
+}
+
+.graduate-reviews__slider .swiper-pagination-bullet-active {
+  background-color: $color-accent;
+  box-shadow: 0 4px 10px 0 rgba(245, 17, 44, 0.58);
+}
+
+.graduate-reviews__slider .swiper-scrollbar {
+  display: none;
+  height: 7px;
+  background-color: #e9e9e9;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+}
+
+.graduate-reviews__slider .swiper-scrollbar-drag {
+  background-color: $color-accent;
+  box-shadow: 0 4px 10px 0 rgba(245, 17, 44, 0.58);
 }

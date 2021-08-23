@@ -9,7 +9,15 @@
 
 .social-links__item {
   &:not(:last-child) {
-    margin-right: 22px;
+    margin-right: px-to-rem(22);
+
+    @media (min-width: $screen-md) {
+      margin-right: px-to-rem(12);
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-right: px-to-rem(8);
+    }
   }
 }
 
@@ -17,8 +25,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: px-to-rem(40);
+  height: px-to-rem(40);
 }
 
 .social-links__link svg {

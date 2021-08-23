@@ -1,17 +1,87 @@
 .method-item {
   text-align: center;
+
+  @media (min-width: $screen-md) {
+    @include make-row();
+
+    position: relative;
+    align-items: center;
+    text-align: left;
+  }
 }
 
-.method-item__title-wrap {
-  margin-bottom: 0.6em;
+.method-item:nth-child(even) .method-item__img-wrap {
+  order: -1;
+}
+
+.method-item--simplicity .method-item__title-descr {
+  @media (min-width: $screen-md) {
+    top: px-to-rem(-12);
+    left: 20.7%;
+  }
+
+  @media (min-width: $screen-xl) {
+    top: px-to-rem(30);
+    left: 16.5%;
+  }
+}
+
+.method-item--communication .method-item__title-descr {
+  @media (min-width: $screen-md) {
+    top: 0;
+    left: 45%;
+  }
+
+  @media (min-width: $screen-xl) {
+    top: px-to-rem(45);
+    left: 46%;
+  }
+}
+
+.method-item--practice .method-item__title-descr {
+  @media (min-width: $screen-md) {
+    top: px-to-rem(-12);
+    left: 2.4%;
+  }
+
+  @media (min-width: $screen-xl) {
+    top: px-to-rem(25);
+    left: 1.2%;
+  }
+}
+
+.method-item--repeat .method-item__title-descr {
+  @media (min-width: $screen-md) {
+    top: 0;
+    left: 50.3%;
+  }
+
+  @media (min-width: $screen-xl) {
+    top: px-to-rem(30);
+    left: 48%;
+  }
+}
+
+.method-item__text-wrap {
+  @media (min-width: $screen-md) {
+    @include make-col-ready();
+    @include make-col(6);
+
+    padding-left: 7%;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-left: 4.5%;
+  }
 }
 
 .method-item__title {
   position: relative;
+  z-index: 2;
   display: inline-block;
-  margin: 0;
+  margin: 0 auto 0.6em;
   font-weight: 900;
-  font-size: px-to-rem(14);
+  font-size: inherit;
 }
 
 .method-item__title svg {
@@ -25,8 +95,41 @@
   fill: $color-accent;
 }
 
+.method-item__title-descr {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    position: absolute;
+    display: block;
+    margin: 0;
+    font-weight: 900;
+    font-size: px-to-rem(72);
+    line-height: 1;
+    color: rgba(#e9e9e9, 0.6);
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: px-to-rem(122);
+  }
+}
+
 .method-item__descr {
   margin: 0 0 1.7em;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
+}
+
+.method-item__img-wrap {
+  @media (min-width: $screen-md) {
+    @include make-col-ready();
+    @include make-col(6);
+
+    z-index: 2;
+  }
 }
 
 .method-item__img-wrap img {

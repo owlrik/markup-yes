@@ -3,10 +3,18 @@
 }
 
 .page-footer__inner {
+  @include make-row();
+
   padding-top: px-to-rem(50);
   padding-bottom: px-to-rem(60);
 
-  @include make-row();
+  @media (min-width: $screen-md) {
+    padding-top: px-to-rem(40);
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: px-to-rem(80);
+  }
 }
 
 .page-footer__left {
@@ -17,15 +25,45 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.07em;
+
+  @media (min-width: $screen-md) {
+    @include make-col-auto();
+
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-top: -5px;
+    padding-top: 0;
+  }
 }
 
 .page-footer__left .page-footer__address {
   margin: 0;
+
+  @media (min-width: $screen-xl) {
+    display: none;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 1em;
   padding: 0.36em;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0.5em;
+    padding-left: 0;
+  }
+}
+
+.page-footer img {
+  width: px-to-rem(61);
+
+  @media (min-width: $screen-xl) {
+    width: px-to-rem(100);
+  }
 }
 
 .page-footer__name {
@@ -39,24 +77,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $screen-md) {
+    @include make-col-auto();
+
+    align-items: flex-end;
+    margin-left: auto;
+  }
 }
 
 .page-footer__social-links {
   margin-bottom: 1.1em;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0.6em;
+    transform: translateX(10px);
+  }
 }
 
 .page-footer__contacts {
   display: flex;
   flex-direction: column;
   line-height: 1.7;
+
+  @media (min-width: $screen-md) {
+    align-items: flex-end;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex-direction: row;
+  }
 }
 
 .page-footer__contacts .page-footer__address {
   display: none;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+    margin: 0 1.56em 0 0;
+  }
 }
 
 .page-footer__phone {
   margin-bottom: 0.14em;
   color: $color-text;
   text-decoration: none;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0.35em;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-right: 1.56em;
+    margin-bottom: 0;
+  }
 }

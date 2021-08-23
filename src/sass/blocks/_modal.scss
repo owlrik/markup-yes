@@ -8,12 +8,16 @@
   display: none;
   min-width: 320px;
   overflow-y: auto;
-  font-size: px-to-rem(14);
+  font-size: inherit;
   line-height: 1.29;
   color: $color-text;
   text-align: center;
   letter-spacing: 0.05em;
   background-color: $color-body;
+
+  @media (min-width: $screen-md) {
+    background-color: rgba($color-black, 0.58);
+  }
 
   &--active {
     display: block;
@@ -24,10 +28,28 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  font-size: inherit;
+
+  @media (min-width: $screen-xl) {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
 }
 
 .modal .form__group {
   margin-bottom: 1.2em;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 0.8em;
+  }
+}
+
+.modal .field-text__input {
+  font-size: inherit;
+
+  @media (min-width: $screen-md) {
+    height: px-to-rem(70);
+  }
 }
 
 .modal__inner {
@@ -52,19 +74,59 @@
 .modal__content {
   position: relative;
   width: 100%;
+  padding-top: px-to-rem(30);
+  padding-bottom: px-to-rem(30);
   background-color: $color-body;
+
+  @media (min-width: $screen-md) {
+    max-width: px-to-rem(560);
+    padding: px-to-rem(50) px-to-rem(30);
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: px-to-rem(650);
+    padding-top: px-to-rem(115);
+    padding-bottom: px-to-rem(140);
+  }
+}
+
+.modal__title {
+  text-align: center;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 0.5em;
+    font-size: px-to-rem(34);
+  }
 }
 
 .modal__text {
-  margin: 1em 0;
+  margin: 0 0 1.4em;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 1.2em;
+  }
+}
+
+.modal__form {
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    max-width: px-to-rem(370);
+    margin: 0 auto;
+  }
 }
 
 .modal__close {
   position: absolute;
-  top: -60px;
-  right: -10px;
-  width: 50px;
-  height: 50px;
+  top: px-to-rem(-30);
+  right: px-to-rem(-10);
+  width: px-to-rem(50);
+  height: px-to-rem(50);
+
+  @media (min-width: $screen-md) {
+    top: 0;
+    right: 0;
+  }
 
   &::before,
   &::after {
@@ -72,7 +134,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 20px;
+    width: px-to-rem(20);
     height: 1px;
     background-color: $color-black;
     transform-origin: 50% 50%;

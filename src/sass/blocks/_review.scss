@@ -2,12 +2,42 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (min-width: $screen-md) {
+    @include make-row();
+
+    flex-direction: row;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+.review__text-wrap {
+  @media (min-width: $screen-md) {
+    @include make-col-ready();
+    @include make-col(9);
+
+    padding-right: 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-left: calc(#{$grid-gutter-width} + 20px);
+  }
 }
 
 .review__name {
   margin: 0 0 0.8em;
   font-weight: 900;
-  font-size: px-to-rem(14);
+  font-size: inherit;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 2em;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 1.3em;
+  }
 }
 
 .review__text {
@@ -17,15 +47,38 @@
 .review__photo {
   order: -1;
   margin-bottom: 1.7em;
+
+  @media (min-width: $screen-md) {
+    @include make-col-ready();
+    @include make-col(3);
+
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    @include make-col(2);
+
+    margin-top: px-to-rem(8);
+  }
 }
 
 .review__photo img {
   width: 156px;
   height: 156px;
   margin: 0 auto;
+
+  @media (min-width: $screen-md) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .review__social-link {
-  align-self: center;
-  margin-top: 0.8em;
+  display: inline-block;
+  margin: 0.8em auto 0;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 1em;
+  }
 }

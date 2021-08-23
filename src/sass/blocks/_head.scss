@@ -1,7 +1,6 @@
 .head {
   min-height: px-to-rem(560);
   padding-top: px-to-rem(80);
-  overflow-x: hidden;
 
   @media (min-width: $screen-xl) {
     padding-top: px-to-rem(100);

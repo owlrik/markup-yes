@@ -9,7 +9,7 @@
     position: relative;
     flex-direction: row;
     align-items: center;
-    text-align: initial;
+    text-align: left;
   }
 
   &:first-child {
@@ -43,8 +43,8 @@
         left: 25.5%;
         z-index: 1;
         display: block;
-        width: 23px;
-        height: 23px;
+        width: px-to-rem(23);
+        height: px-to-rem(23);
         background-color: $color-decor;
         border-radius: 50%;
         transform: translateX(-50%);
@@ -61,12 +61,12 @@
 
 .problems-item--hotel .problems-item__marker {
   @media (min-width: $screen-md) {
-    top: 35px;
+    top: px-to-rem(35);
     left: 40%;
   }
 
   @media (min-width: $screen-xl) {
-    top: 50px;
+    top: px-to-rem(50);
     left: 57%;
   }
 }
@@ -102,21 +102,23 @@
 
   @media (min-width: $screen-md) {
     position: absolute;
-    top: 230px;
+    top: px-to-rem(230);
     left: 32%;
     z-index: 1;
     display: block;
+    width: px-to-rem(145);
+    height: px-to-rem(19);
   }
 
   @media (min-width: $screen-xl) {
-    top: 275px;
+    top: px-to-rem(275);
     left: 50%;
   }
 }
 
 .problems-item--metro .problems-item__marker {
   @media (min-width: $screen-md) {
-    top: 25px;
+    top: px-to-rem(25);
     left: 44%;
   }
 
@@ -128,7 +130,7 @@
 .problems-item--metro .problems-item__descr {
   @media (min-width: $screen-xl) {
     max-width: px-to-rem(400);
-    transform: translateY(-42px);
+    transform: translateY(#{px-to-rem(-42)});
   }
 }
 
@@ -144,7 +146,7 @@
 
 .problems-item--airport .problems-item__marker {
   @media (min-width: $screen-md) {
-    top: 140px;
+    top: px-to-rem(140);
     left: 48%;
   }
 
@@ -155,7 +157,7 @@
 
 .problems-item--airport .problems-item__descr {
   @media (min-width: $screen-md) {
-    transform: translateY(-25px);
+    transform: translateY(#{px-to-rem(-25)});
   }
 
   @media (min-width: $screen-xl) {
@@ -178,12 +180,12 @@
   letter-spacing: 0.06em;
 
   @media (min-width: $screen-md) {
-    top: 18px;
+    top: px-to-rem(18);
     left: 42%;
   }
 
   @media (min-width: $screen-xl) {
-    top: 65px;
+    top: px-to-rem(65);
     left: 45.8%;
   }
 }
@@ -192,7 +194,7 @@
   width: 80%;
 
   @media (min-width: $screen-md) {
-    transform: translateY(28px);
+    transform: translateY(#{px-to-rem(28)});
   }
 
   @media (min-width: $screen-xl) {

@@ -31,11 +31,11 @@
 
     align-items: flex-start;
     margin-bottom: 0;
-    padding-top: 10px;
+    padding-top: px-to-rem(10);
   }
 
   @media (min-width: $screen-xl) {
-    margin-top: -5px;
+    margin-top: px-to-rem(-5);
     padding-top: 0;
   }
 }

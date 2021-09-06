@@ -119,6 +119,8 @@
   margin: 0 0 1.7em;
 
   @media (min-width: $screen-md) {
+    position: relative;
+    z-index: 2;
     margin-bottom: 0;
   }
 }

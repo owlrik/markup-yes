@@ -37,6 +37,8 @@
 }
 
 .trial__text-wrapper {
+  z-index: 2;
+
   @media (min-width: $screen-md) {
     @include make-col-ready();
     @include make-col(6);
@@ -75,6 +77,7 @@
 
 .trial__decor {
   position: absolute;
+  z-index: 1;
   display: block;
 
   &--blue {
@@ -90,17 +93,17 @@
     transform: translateX(-50%);
 
     @media (min-width: $screen-md) {
-      top: 120px;
-      left: 40px;
-      width: 600px;
-      height: 350px;
+      top: px-to-rem(120);
+      left: px-to-rem(40);
+      width: px-to-rem(600);
+      height: px-to-rem(350);
     }
 
     @media (min-width: $screen-xl) {
-      top: 135px;
-      left: 190px;
-      width: 905px;
-      height: 530px;
+      top: px-to-rem(135);
+      left: px-to-rem(190);
+      width: px-to-rem(905);
+      height: px-to-rem(530);
     }
   }
 
@@ -113,8 +116,8 @@
     @media (min-width: $screen-md) {
       top: px-to-rem(12);
       right: px-to-rem(20);
-      width: 145px;
-      height: 19px;
+      width: px-to-rem(145);
+      height: px-to-rem(19);
     }
 
     @media (min-width: $screen-xl) {
@@ -131,8 +134,8 @@
     @media (min-width: $screen-md) {
       top: px-to-rem(110);
       left: px-to-rem(240);
-      width: 145px;
-      height: 19px;
+      width: px-to-rem(145);
+      height: px-to-rem(19);
     }
 
     @media (min-width: $screen-xl) {
@@ -179,8 +182,8 @@
 
     @media (min-width: $screen-md) {
       display: block;
-      width: 11px;
-      height: 11px;
+      width: px-to-rem(11);
+      height: px-to-rem(11);
       top: px-to-rem(130);
       right: px-to-rem(-155);
     }
@@ -196,8 +199,8 @@
 
     @media (min-width: $screen-md) {
       display: block;
-      width: 23px;
-      height: 23px;
+      width: px-to-rem(23);
+      height: px-to-rem(23);
       top: px-to-rem(130);
       right: px-to-rem(-30);
     }

@@ -131,4 +131,8 @@
     margin-right: 1.56em;
     margin-bottom: 0;
   }
+
+  &:active {
+    color: $color-text;
+  }
 }

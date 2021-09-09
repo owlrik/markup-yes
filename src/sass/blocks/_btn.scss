@@ -25,4 +25,16 @@
     padding-bottom: 1.2em;
     font-size: px-to-rem(18);
   }
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: $color-text--invert;
+    background-color: $color-accent--dark;
+    box-shadow: 0 10px 18px 0 rgba(246, 27, 60, 0.75);
+    opacity: 1;
+  }
 }

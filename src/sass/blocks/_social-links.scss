@@ -29,6 +29,10 @@
   height: px-to-rem(40);
 }
 
+.social-links__link:active svg {
+  fill-opacity: 0.5;
+}
+
 .social-links__link svg {
   fill-opacity: 0.18;
 }

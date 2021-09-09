@@ -40,6 +40,16 @@ body {
 a {
   color: $color-accent;
   text-underline-offset: 0.36em;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: $color-accent--dark;
+    opacity: 1;
+  }
 }
 
 img,

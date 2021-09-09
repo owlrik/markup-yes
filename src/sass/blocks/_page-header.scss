@@ -73,4 +73,8 @@
   @media (min-width: $screen-md) {
     margin-right: 1.56em;
   }
+
+  &:active {
+    color: $color-text;
+  }
 }

@@ -15,6 +15,8 @@ const addScrolledClass = () => {
 const headerScroll = () => {
   window.addEventListener('scroll', addScrolledClass);
   window.addEventListener('load', addScrolledClass);
+
+  addScrolledClass();
 };
 
 export {headerScroll};

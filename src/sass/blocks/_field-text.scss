@@ -6,17 +6,35 @@
   font-size: px-to-rem(14);
   line-height: 1.29;
   font-family: $font-family;
-  color: $color-text;
+  color: rgba($color-text, 0.34);
   text-align: center;
   letter-spacing: 0.1em;
   background-color: $color-white;
   border: 1px solid #bababa;
   border-radius: 2.2em;
+  outline: 0;
+
+  &:focus,
+  &:hover {
+    color: $color-text;
+    border-color: $color-main;
+  }
+
+  &--invalid {
+    border-color: $color-accent;
+  }
 }
 
 .field-text__error-message {
   max-height: 0;
   margin: 0;
+  font-size: px-to-rem(14);
+  color: $color-accent;
   visibility: hidden;
   opacity: 0;
+
+  &--shown {
+    visibility: visible;
+    opacity: 1;
+  }
 }

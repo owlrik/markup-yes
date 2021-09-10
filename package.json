@@ -42,6 +42,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "husky": "^4.3.8",
+    "imask": "^6.2.0",
     "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "^0.1.10",
     "terser-webpack-plugin": "^5.1.4",

@@ -37,6 +37,7 @@
 }
 
 .trial__text-wrapper {
+  position: relative;
   z-index: 2;
 
   @media (min-width: $screen-md) {

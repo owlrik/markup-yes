@@ -164,7 +164,15 @@
     z-index: 2;
     width: px-to-rem(269);
     height: px-to-rem(388);
-    background: url("../img/bg/bg-bigben.png") top center/contain no-repeat;
+    background-image: url("../img/bg/bg-bigben-mobile@1x.png"); // image-set fallback
+    /* stylelint-disable-next-line */
+    background-image: image-set(
+      url("../img/bg/bg-bigben-mobile@2x.png") 2x,
+      url("../img/bg/bg-bigben-mobile@1x.png") 1x
+    );
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     @media (min-width: $screen-md) {
       top: px-to-rem(10);
@@ -172,6 +180,12 @@
       left: auto;
       width: px-to-rem(612);
       height: px-to-rem(881);
+      background-image: url("../img/bg/bg-bigben-tablet@1x.png"); // image-set fallback
+      /* stylelint-disable-next-line */
+      background-image: image-set(
+        url("../img/bg/bg-bigben-tablet@2x.png") 2x,
+        url("../img/bg/bg-bigben-tablet@1x.png") 1x
+      );
     }
 
     @media (min-width: $screen-xl) {
@@ -179,6 +193,12 @@
       right: calc(100% - #{px-to-rem(340)});
       width: px-to-rem(749);
       height: px-to-rem(1078);
+      background-image: url("../img/bg/bg-bigben-desktop@1x.png"); // image-set fallback
+      /* stylelint-disable-next-line */
+      background-image: image-set(
+        url("../img/bg/bg-bigben-desktop@2x.png") 2x,
+        url("../img/bg/bg-bigben-desktop@1x.png") 1x
+      );
     }
   }
 

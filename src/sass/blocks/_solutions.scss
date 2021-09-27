@@ -163,7 +163,15 @@
       left: calc(100% - #{px-to-rem(195)});
       width: px-to-rem(611);
       height: px-to-rem(365);
-      background: url("../img/bg/bg-solutions-hike.png") center/contain no-repeat;
+      background-image: url("../img/bg/bg-solutions-hike-tablet@1x.png"); // image-set fallback
+      /* stylelint-disable-next-line */
+      background-image: image-set(
+        url("../img/bg/bg-solutions-hike-tablet@2x.png") 2x,
+        url("../img/bg/bg-solutions-hike-tablet@1x.png") 1x
+      );
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
     @media (min-width: $screen-xl) {
@@ -171,6 +179,12 @@
       left: calc(100% - #{px-to-rem(518)});
       width: px-to-rem(1018);
       height: px-to-rem(608);
+      background-image: url("../img/bg/bg-solutions-hike-desktop@1x.png"); // image-set fallback
+      /* stylelint-disable-next-line */
+      background-image: image-set(
+        url("../img/bg/bg-solutions-hike-desktop@2x.png") 2x,
+        url("../img/bg/bg-solutions-hike-desktop@1x.png") 1x
+      );
     }
   }
 

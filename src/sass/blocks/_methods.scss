@@ -1,5 +1,9 @@
 .methods {
   background: url("../img/bg/bg-methods.svg") center/cover no-repeat;
+
+  @media (min-width: $screen-xxxl) {
+    background-size: 2030px auto;
+  }
 }
 
 .methods__inner {

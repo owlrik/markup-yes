@@ -107,7 +107,22 @@
     left: 50%;
     width: px-to-rem(290);
     height: px-to-rem(295);
-    background: url("../img/bg/bg-head-bus.png") center top/contain no-repeat;
+    background-image: url("../img/bg/bg-head-bus-mobile@1x.png"); // image-set fallback
+    /* stylelint-disable-next-line */
+    background-image: image-set(
+      url("../img/bg/bg-head-bus-mobile@2x.png") 2x,
+      url("../img/bg/bg-head-bus-mobile@1x.png") 1x
+    );
+    /* stylelint-disable-next-line */
+    background-image: image-set(
+      url("../img/bg/bg-head-bus-mobile@2x.webp") type("image/webp") 2x,
+      url("../img/bg/bg-head-bus-mobile@1x.webp") type("image/webp") 1x,
+      url("../img/bg/bg-head-bus-mobile@2x.png") 2x,
+      url("../img/bg/bg-head-bus-mobile@1x.png") 1x
+    );
+    background-position: 50% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
     transform: translateX(-50%);
 
     @media (min-width: $screen-md) {
@@ -115,6 +130,19 @@
       left: 0;
       width: px-to-rem(365);
       height: px-to-rem(490);
+      background-image: url("../img/bg/bg-head-bus-tablet@1x.png"); // image-set fallback
+      /* stylelint-disable-next-line */
+      background-image: image-set(
+        url("../img/bg/bg-head-bus-tablet@2x.png") 2x,
+        url("../img/bg/bg-head-bus-tablet@1x.png") 1x
+      );
+      /* stylelint-disable-next-line */
+      background-image: image-set(
+        url("../img/bg/bg-head-bus-tablet@2x.webp") type("image/webp") 2x,
+        url("../img/bg/bg-head-bus-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/bg/bg-head-bus-tablet@2x.png") 2x,
+        url("../img/bg/bg-head-bus-tablet@1x.png") 1x
+      );
       transform: none;
     }
 

@@ -171,7 +171,7 @@
     letter-spacing: 8px;
     transform: translateX(-50%);
     opacity: 0.06;
-    pointer-events: none;
+    user-select: none;
 
     @media (min-width: $screen-lg) {
       display: block;

@@ -143,6 +143,8 @@ const syncServer = () => {
   gulp.watch([`${paths.src.scripts}**/*.{js,json}`], gulp.series(buildScripts, refresh));
   gulp.watch([`${paths.src.images.all}**/*.{jpg,jpeg,png,webp,gif,svg}`, `!${paths.src.images.spriteSvg}*.svg`], gulp.series(optimizeSvg, copyImages, refresh));
   gulp.watch([`${paths.src.images.spriteSvg}*.svg`], gulp.series(optimizeSvg, buildSvgSprite, refresh));
+
+  gulp.watch([`${paths.src.favicon}**`], gulp.series(copyMisc, refresh));
 };
 
 const deploy = (done) => {

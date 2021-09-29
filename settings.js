@@ -17,7 +17,8 @@ module.exports = {
         sprite: dirs.src + 'img/sprite/',
         spriteSvg: dirs.src + 'img/sprite/svg/'
       },
-      fonts: dirs.src + 'fonts/'
+      fonts: dirs.src + 'fonts/',
+      favicon: dirs.src + 'favicon/'
     },
     dest: {
       root: dirs.dest,
@@ -28,7 +29,8 @@ module.exports = {
         sprite: dirs.src + 'img/sprite/',
         spriteSvg: dirs.src + 'img/sprite/svg/'
       },
-      fonts: dirs.dest + 'fonts/'
+      fonts: dirs.dest + 'fonts/',
+      favicon: dirs.dest + 'favicon/'
     }
   }
 };

@@ -17,17 +17,6 @@ module.exports = {
   },
   optimization: {
     minimize: isProd,
-    minimizer: [
-      new TerserPlugin({
-        parallel: true,
-        terserOptions: {
-          output: {
-            comments: false,
-          },
-        },
-        extractComments: false
-      })
-    ]
   },
   module: {
     rules: [

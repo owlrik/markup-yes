@@ -1359,46 +1359,23 @@ button,
   .head__decor--blue {
     fill: #2429ff; }
   .head__decor--pic {
-    top: -1.25rem;
+    top: -2.5rem;
     left: 50%;
-    width: 18.125rem;
-    height: 18.4375rem;
-    background-image: url("../img/bg/bg-head-bus-mobile@1x.png");
-    /* stylelint-disable-next-line */
-    background-image: -webkit-image-set(url("../img/bg/bg-head-bus-mobile@2x.png") 2x, url("../img/bg/bg-head-bus-mobile@1x.png") 1x);
-    background-image: image-set(url("../img/bg/bg-head-bus-mobile@2x.png") 2x, url("../img/bg/bg-head-bus-mobile@1x.png") 1x);
-    /* stylelint-disable-next-line */
-    background-image: -webkit-image-set(url("../img/bg/bg-head-bus-mobile@2x.webp") type("image/webp") 2x, url("../img/bg/bg-head-bus-mobile@1x.webp") type("image/webp") 1x, url("../img/bg/bg-head-bus-mobile@2x.png") 2x, url("../img/bg/bg-head-bus-mobile@1x.png") 1x);
-    background-image: image-set(url("../img/bg/bg-head-bus-mobile@2x.webp") type("image/webp") 2x, url("../img/bg/bg-head-bus-mobile@1x.webp") type("image/webp") 1x, url("../img/bg/bg-head-bus-mobile@2x.png") 2x, url("../img/bg/bg-head-bus-mobile@1x.png") 1x);
-    background-position: 50% 0;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 15.1875rem;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
     @media (min-width: 768px) {
       .head__decor--pic {
         top: -3.4375rem;
-        left: 0;
+        left: -4.0625rem;
         width: 22.8125rem;
-        height: 30.625rem;
-        background-image: url("../img/bg/bg-head-bus-tablet@1x.png");
-        /* stylelint-disable-next-line */
-        background-image: -webkit-image-set(url("../img/bg/bg-head-bus-tablet@2x.png") 2x, url("../img/bg/bg-head-bus-tablet@1x.png") 1x);
-        background-image: image-set(url("../img/bg/bg-head-bus-tablet@2x.png") 2x, url("../img/bg/bg-head-bus-tablet@1x.png") 1x);
-        /* stylelint-disable-next-line */
-        background-image: -webkit-image-set(url("../img/bg/bg-head-bus-tablet@2x.webp") type("image/webp") 2x, url("../img/bg/bg-head-bus-tablet@1x.webp") type("image/webp") 1x, url("../img/bg/bg-head-bus-tablet@2x.png") 2x, url("../img/bg/bg-head-bus-tablet@1x.png") 1x);
-        background-image: image-set(url("../img/bg/bg-head-bus-tablet@2x.webp") type("image/webp") 2x, url("../img/bg/bg-head-bus-tablet@1x.webp") type("image/webp") 1x, url("../img/bg/bg-head-bus-tablet@2x.png") 2x, url("../img/bg/bg-head-bus-tablet@1x.png") 1x);
         -webkit-transform: none;
                 transform: none; } }
-    @media (min-width: 992px) {
-      .head__decor--pic {
-        left: -4.375rem; } }
     @media (min-width: 1280px) {
       .head__decor--pic {
         top: -6.25rem;
         left: 0;
-        width: 38.4375rem;
-        height: 50rem; } }
+        width: 38rem; } }
   .head__decor--text {
     top: 1.875rem;
     left: 50%;
@@ -1473,6 +1450,12 @@ button,
   display: block;
   width: 100%;
   height: 100%; }
+
+.head__decor--pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; }
 
 .head__decor--text span {
   font-size: 15.5vw; }

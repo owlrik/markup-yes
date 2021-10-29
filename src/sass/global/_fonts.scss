@@ -1,10 +1,10 @@
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: $font-family;
+  font-family: "Gilroy";
   font-display: swap;
   src:
-    local("Gilroy-Light"),
+    local("Gilroy Light"),
     url("../fonts/Gilroy-Light.woff2") format("woff2"),
     url("../fonts/Gilroy-Light.woff") format("woff");
 }
@@ -12,10 +12,10 @@
 @font-face {
   font-style: normal;
   font-weight: 900;
-  font-family: $font-family;
+  font-family: "Gilroy";
   font-display: swap;
   src:
-    local("Gilroy-ExtraBold"),
+    local("Gilroy ExtraBold"),
     url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"),
     url("../fonts/Gilroy-ExtraBold.woff") format("woff");
 }
